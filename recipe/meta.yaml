@@ -15,7 +15,8 @@ source:
   sha256: d22ddc05cd5308a48b8359b932e1f7f4c23fdf0c857ac8e52c42381b6bfcff76
 
 build:
-  number: 0
+  merge_build_host: True  # [win]
+  number: 1
   skip: true  # [win32]
 
   rpaths:
@@ -24,6 +25,12 @@ build:
 
 requirements:
   build:
+    - posix                # [win]
+    - {{ compiler('c') }}        # [unix]
+    - {{ compiler('m2w64_c') }}  # [win]
+    - {{ compiler('cxx') }}        # [unix]
+    - {{ compiler('m2w64_cxx') }}  # [win]
+  host:
     - r-base
     - r-r6
     - r-rcpp
@@ -34,9 +41,6 @@ requirements:
     - r-stringi
     - r-stringr >=0.5
     - r-xml2
-    - posix                # [win]
-    - {{native}}toolchain  # [win]
-    - gcc                  # [not win]
 
   run:
     - r-base
@@ -49,7 +53,6 @@ requirements:
     - r-stringi
     - r-stringr >=0.5
     - r-xml2
-    - libgcc               # [not win]
 
 test:
   commands:
