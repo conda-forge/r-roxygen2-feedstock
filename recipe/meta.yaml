@@ -1,4 +1,4 @@
-{% set version = '6.0.1' %}
+{% set version = "6.1.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,11 +12,11 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/roxygen2_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/roxygen2/roxygen2_{{ version }}.tar.gz
-  sha256: d22ddc05cd5308a48b8359b932e1f7f4c23fdf0c857ac8e52c42381b6bfcff76
+  sha256: 4af522cf79beebf96e591b8caf1465018e91310d12bb1a39a2cbed153499294a
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 0
   skip: true  # [win32]
 
   rpaths:
