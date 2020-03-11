@@ -38,8 +38,10 @@ requirements:
     - r-commonmark
     - r-desc >=1.2.0
     - r-digest
+    - r-knitr
     - r-pkgload >=1.0.2
-    - r-purrr
+    - r-purrr >=0.3.3
+    - r-rlang
     - r-stringi
     - r-stringr >=1.0.0
     - r-xml2
@@ -52,8 +54,10 @@ requirements:
     - r-commonmark
     - r-desc >=1.2.0
     - r-digest
+    - r-knitr
     - r-pkgload >=1.0.2
-    - r-purrr
+    - r-purrr >=0.3.3
+    - r-rlang
     - r-stringi
     - r-stringr >=1.0.0
     - r-xml2
