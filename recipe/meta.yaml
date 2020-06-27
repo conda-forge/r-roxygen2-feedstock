@@ -1,4 +1,4 @@
-{% set version = "7.1.0" %}
+{% set version = "7.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/roxygen2_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/roxygen2/roxygen2_{{ version }}.tar.gz
-  sha256: 7e9b36f6e7c01a5c8c4747340b3d0c064ce2e48c93fcfbfe45139854fae74103
+  sha256: bdc55ded037d4366f4d25a0d69e880dacc0fa22bee20f595d45855eef8548861
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -70,8 +70,7 @@ test:
 about:
   home: https://github.com/klutometis/roxygen
   license: GPL (>= 2)
-  summary: Generate your Rd documentation, 'NAMESPACE' file, and collation  field using specially formatted comments. Writing documentation in-line with code makes
-    it easier to keep your documentation up-to-date as your requirements change. 'Roxygen2' is inspired by the 'Doxygen' system for C++.
+  summary: Generate your Rd documentation, 'NAMESPACE' file, and collation  field using specially formatted comments. Writing documentation in-line with code makes it easier to keep your documentation up-to-date as your requirements change. 'Roxygen2' is inspired by the 'Doxygen' system for C++.
   license_family: GPL3
   license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
