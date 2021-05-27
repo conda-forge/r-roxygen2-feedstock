@@ -69,7 +69,7 @@ test:
 
 about:
   home: https://github.com/klutometis/roxygen
-  license: GPL (>= 2)
+  license: GPL-2.0-or-later
   summary: Generate your Rd documentation, 'NAMESPACE' file, and collation  field using specially formatted comments. Writing documentation in-line with code makes it easier to keep your documentation up-to-date as your requirements change. 'Roxygen2' is inspired by the 'Doxygen' system for C++.
   license_family: GPL3
   license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
