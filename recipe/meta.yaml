@@ -78,4 +78,5 @@ about:
 
 extra:
   recipe-maintainers:
+    - mfansler
     - conda-forge/r
