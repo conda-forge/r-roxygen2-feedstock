@@ -21,6 +21,20 @@ build:
 
 requirements:
   build:
+    - cross-r-base {{ r_base }}  # [build_platform != target_platform]
+    - r-brew                     # [build_platform != target_platform]
+    - r-desc                     # [build_platform != target_platform]
+    - r-stringr                  # [build_platform != target_platform]
+    - r-xml2                     # [build_platform != target_platform]
+    - r-digest                   # [build_platform != target_platform]
+    - r-r6                       # [build_platform != target_platform]
+    - r-cpp11                    # [build_platform != target_platform]
+    - r-commonmark               # [build_platform != target_platform]
+    - r-knitr                    # [build_platform != target_platform]
+    - r-rlang                    # [build_platform != target_platform]
+    - r-stringi                  # [build_platform != target_platform]
+    - r-pkgload                  # [build_platform != target_platform]
+    - r-purrr                    # [build_platform != target_platform]
     - {{ compiler('c') }}              # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
     - {{ compiler('cxx') }}            # [not win]
