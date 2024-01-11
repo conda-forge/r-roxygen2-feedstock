@@ -3,6 +3,7 @@ About r-roxygen2-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-roxygen2-feedstock/blob/main/LICENSE.txt)
 
+
 About r-roxygen2
 ----------------
 
@@ -11,6 +12,7 @@ Home: https://github.com/klutometis/roxygen
 Package license: MIT
 
 Summary: Generate your Rd documentation, 'NAMESPACE' file, and collation  field using specially formatted comments. Writing documentation in-line with code makes it easier to keep your documentation up-to-date as your requirements change. 'Roxygen2' is inspired by the 'Doxygen' system for C++.
+
 About r-roxygen2
 ----------------
 
@@ -195,7 +197,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
