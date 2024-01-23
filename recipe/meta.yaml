@@ -1,4 +1,4 @@
-{% set version = "7.3.0" %} 
+{% set version = "7.3.1" %} 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/roxygen2_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/roxygen2/roxygen2_{{ version }}.tar.gz
-  sha256: f8dc21ebef71b073221f2d1cc3591f02b97dfb8ec814cd6ed09671962cad7f17
+  sha256: 215e9fa9c0e73cb33f9870854c97b25c1a6386f519f69f397123f1a66656e2c8
 
 build:
   merge_build_host: true  # [win]
