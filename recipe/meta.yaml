@@ -1,4 +1,4 @@
-{% set version = "7.3.1" %} 
+{% set version = "7.3.2" %} 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/roxygen2_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/roxygen2/roxygen2_{{ version }}.tar.gz
-  sha256: 215e9fa9c0e73cb33f9870854c97b25c1a6386f519f69f397123f1a66656e2c8
+  sha256: b788879f9132b7e2e656f442a6c592314676a9bf32d6a0a56e156cfa1ada011c
 
 build:
   merge_build_host: true  # [win]
@@ -36,7 +36,9 @@ requirements:
     - r-pkgload                  # [build_platform != target_platform]
     - r-purrr                    # [build_platform != target_platform]
     - {{ compiler('c') }}              # [not win]
+    - {{ stdlib("c") }}                # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
+    - {{ stdlib("m2w64_c") }}          # [win]
     - {{ compiler('cxx') }}            # [not win]
     - {{ compiler('m2w64_cxx') }}      # [win]
     - {{ posix }}filesystem        # [win]
