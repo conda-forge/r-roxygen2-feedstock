@@ -1,6 +1,5 @@
 {% set version = "7.3.2" %} 
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-roxygen2
@@ -13,8 +12,7 @@ source:
   sha256: b788879f9132b7e2e656f442a6c592314676a9bf32d6a0a56e156cfa1ada011c
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -64,7 +62,6 @@ requirements:
     - r-xml2
   run:
     - r-base
-    - {{ native }}gcc-libs         # [win]
     - r-r6 >=2.1.2
     - r-brew
     - r-commonmark
