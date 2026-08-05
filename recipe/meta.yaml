@@ -25,6 +25,7 @@ requirements:
   build:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
     - r-brew                       # [build_platform != target_platform]
+    - r-cli >=3.3.0                # [build_platform != target_platform]
     - r-commonmark                 # [build_platform != target_platform]
     - r-cpp11                      # [build_platform != target_platform]
     - r-desc >=1.2.0               # [build_platform != target_platform]
@@ -32,6 +33,7 @@ requirements:
     - r-lifecycle                  # [build_platform != target_platform]
     - r-pkgload >=1.5.2            # [build_platform != target_platform]
     - r-r6 >=2.1.2                 # [build_platform != target_platform]
+    - r-rdtools >=0.1.0            # [build_platform != target_platform]
     - r-rlang >=1.1.0              # [build_platform != target_platform]
     - r-withr                      # [build_platform != target_platform]
     - r-xml2                       # [build_platform != target_platform]
@@ -49,6 +51,7 @@ requirements:
   host:
     - r-base
     - r-brew
+    - r-cli >=3.3.0
     - r-commonmark
     - r-cpp11
     - r-desc >=1.2.0
@@ -56,18 +59,21 @@ requirements:
     - r-lifecycle
     - r-pkgload >=1.5.2
     - r-r6 >=2.1.2
+    - r-rdtools >=0.1.0
     - r-rlang >=1.1.0
     - r-withr
     - r-xml2
   run:
     - r-base
     - r-brew
+    - r-cli >=3.3.0
     - r-commonmark
     - r-desc >=1.2.0
     - r-knitr
     - r-lifecycle
     - r-pkgload >=1.5.2
     - r-r6 >=2.1.2
+    - r-rdtools >=0.1.0
     - r-rlang >=1.1.0
     - r-withr
     - r-xml2
